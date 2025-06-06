@@ -38,7 +38,8 @@ $query = mysqli_query($conn, "
                 <td>Rp<?= number_format($row['Total'], 0, ',', '.') ?></td>
                 <td>
                     <a href="detail.php?id=<?= $row['PenjualanID'] ?>" class="btn btn-info btn-sm">Detail</a>
-                    <!-- Bisa ditambah tombol hapus kalau ingin -->
+                    <a href="delete.php?id=<?= $row['PenjualanID'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus penjualan ini?')">Hapus</a>
+
                 </td>
             </tr>
             <?php endwhile; ?>
