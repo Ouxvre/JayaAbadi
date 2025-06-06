@@ -46,6 +46,7 @@ include('../../includes/navbar.php');
             ?>
         </tbody>
     </table>
+    <a href="../../index.php" class="btn btn-secondary">Kembali ke Dashboard</a>
 </div>
 
 <?php include('../../includes/footer.php'); ?>

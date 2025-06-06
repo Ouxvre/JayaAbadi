@@ -1,5 +1,8 @@
 <?php
 include '../../config/koneksi.php';
+include('../../includes/header.php');
+include('../../includes/navbar.php');
+include('../../includes/footer.php');
 
 $query = mysqli_query($conn, "
     SELECT p.PenjualanID, p.Tanggal, pl.NamaPelanggan, p.Total
